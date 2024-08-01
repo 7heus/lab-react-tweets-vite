@@ -40,7 +40,9 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      {tweetsArray.forEach((tweet) => (
+        <Tweet tweet={tweet} />
+      ))}
     </div>
   );
 }
